@@ -1,4 +1,4 @@
-import 'package:fellow_traveler/utils/flutkart.dart';
+import 'package:fellow_traveler/utils/fellow.dart';
 import 'package:flutter/material.dart';
 import 'package:fellow_traveler/utils/my_navigator.dart';
 import 'package:fellow_traveler/widgets/walkthrough.dart';
@@ -43,23 +43,23 @@ class IntroScreenState extends State<IntroScreen> {
             child: PageView(
               children: <Widget>[
                 Walkthrough(
-                  title: Flutkart.wt1,
-                  content: Flutkart.wc1,
+                  title: Fellow.wt1,
+                  content: Fellow.wc1,
                   imageIcon: Icons.mobile_screen_share,
                 ),
                 Walkthrough(
-                  title: Flutkart.wt2,
-                  content: Flutkart.wc2,
+                  title: Fellow.wt2,
+                  content: Fellow.wc2,
                   imageIcon: Icons.search,
                 ),
                 Walkthrough(
-                  title: Flutkart.wt3,
-                  content: Flutkart.wc3,
+                  title: Fellow.wt3,
+                  content: Fellow.wc3,
                   imageIcon: Icons.shopping_cart,
                 ),
                 Walkthrough(
-                  title: Flutkart.wt4,
-                  content: Flutkart.wc4,
+                  title: Fellow.wt4,
+                  content: Fellow.wc4,
                   imageIcon: Icons.verified_user,
                 ),
               ],
@@ -74,7 +74,7 @@ class IntroScreenState extends State<IntroScreen> {
               crossAxisAlignment: CrossAxisAlignment.end,
               children: <Widget>[
                 FlatButton(
-                  child: Text(lastPage ? "" : Flutkart.skip,
+                  child: Text(lastPage ? "" : Fellow.skip,
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
@@ -83,7 +83,7 @@ class IntroScreenState extends State<IntroScreen> {
                       lastPage ? null : MyNavigator.goToHome(context),
                 ),
                 FlatButton(
-                  child: Text(lastPage ? Flutkart.gotIt : Flutkart.next,
+                  child: Text(lastPage ? Fellow.gotIt : Fellow.next,
                       style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,

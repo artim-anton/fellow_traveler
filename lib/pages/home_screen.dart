@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fellow_traveler/utils/flutkart.dart';
+import 'package:fellow_traveler/utils/fellow.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -47,7 +47,7 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(Flutkart.name),
+        title: Text(Fellow.name),
         actions: <Widget>[
           Padding(
             child: Icon(Icons.search),
