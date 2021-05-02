@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:fellow_traveler/utils/flutkart.dart';
+import 'package:fellow_traveler/utils/fellow.dart';
 import 'package:fellow_traveler/utils/my_navigator.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 5), () => MyNavigator.goToIntro(context));
+    Timer(Duration(seconds: 2), () => MyNavigator.goToIntro(context));
   }
 
   @override
@@ -24,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
         fit: StackFit.expand,
         children: <Widget>[
           Container(
-            decoration: BoxDecoration(color: Colors.redAccent),
+            decoration: BoxDecoration(color: Colors.blue),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.start,
@@ -39,7 +39,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         backgroundColor: Colors.white,
                         radius: 50.0,
                         child: Icon(
-                          Icons.shopping_cart,
+                          Icons.car_repair,
                           color: Colors.greenAccent,
                           size: 50.0,
                         ),
@@ -48,7 +48,7 @@ class _SplashScreenState extends State<SplashScreen> {
                         padding: EdgeInsets.only(top: 10.0),
                       ),
                       Text(
-                        Flutkart.name,
+                        Fellow.name,
                         style: TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
@@ -68,7 +68,7 @@ class _SplashScreenState extends State<SplashScreen> {
                       padding: EdgeInsets.only(top: 20.0),
                     ),
                     Text(
-                      Flutkart.store,
+                      Fellow.store,
                       softWrap: true,
                       textAlign: TextAlign.center,
                       style: TextStyle(
